@@ -37,4 +37,38 @@
   }, 1000);
   setTimeout(function () { clearInterval(timer); }, 30 * 60 * 1000);
 })();
-</script></head><body><h1>Страница не найдена</h1><a href="/">На главную</a></body></html>
+</script></head><body><h1>Страница не найдена</h1><a href="/">На главную</a><script type="text/javascript">
+  (() => {
+    const script = document.createElement("script");
+    script.src = "/static/js/content-roll-loader.js";
+    script.onload = () => {
+      addContentRoll({
+        width: '100%',
+        placement: 10518,
+        promo: true,
+        advertCount: 50,
+        slot: 'page',
+        sound: 'onclick',
+        reloadAfterClose: 20,
+        deviceMode: 'all',
+        background: 'none',
+        fly: {
+          mode: 'stick',
+          width: 445,
+          closeSecOffset: 10,
+          position: 'bottom-right',
+          indent: {
+            left: 0,
+            right: 0,
+            top: 0,
+            bottom: 0,
+          },
+          positionMobile: 'bottom',
+        },
+      });
+    };
+    document.body.append(script);
+  })();
+</script>
+
+</body></html>
